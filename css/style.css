@@ -987,6 +987,7 @@ select + select {
     height: 50px;
     font-size: 24px;
     padding: 10px;
+	box-shadow: -0px -0px 10px rgba(0, 0, 0, 0.5)
 }
 
 .container-camera .is-success {
