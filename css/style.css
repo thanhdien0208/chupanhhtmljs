@@ -901,7 +901,7 @@ select + select {
 .container-camera .boximg .btns #btnScreenshot {
     position: absolute;
     bottom: 0;
-    left: 44%;
+    left: 43%;
     margin-top: 5px !important;
 }
 
@@ -920,6 +920,7 @@ select + select {
     display: grid;
     grid-template-rows: 2fr 1fr;
     grid-column-gap: 10px; 
+    overflow: auto;
 }
 
 /* =====Zoom IMG===== */
@@ -934,8 +935,6 @@ select + select {
     left: 0%;
     width: 100%;
     text-align: center;
-    /* margin-top: 20%; */
-
 }
 
 .container-camera .container-img img {
