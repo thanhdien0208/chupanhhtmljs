@@ -897,40 +897,35 @@ select + select {
 }
 
 .video-screenshot {
-    text-align: center;
-}
-
-.video-screenshot {
     display: grid;
     grid-template-rows: 1fr 1fr;
-    grid-column-gap: 10px;
+    grid-column-gap: 10px; 
+    text-align: center;
 }
 
 /* =====Zoom IMG===== */
 
 input[type=checkbox] {
     display: none;
-  }
+}
 
-  /* .container-img {
-    text-align: center;
-  } */
-  
-  .container-img img {
+.container-img img {
     transition: transform 0.25s ease;
     cursor: pointer;
     width: 80px;
     margin-left: 5px;
-  }
-  
-  /* input[type=checkbox]:checked ~ label > img {
+}
+
+/* input[type=checkbox]:checked ~ label > img {
     transform: scale(2);
     cursor: zoom-out;
   } */
-  #screenshotsContainer img:hover {
-    transform: scale(5);
-    text-align: center;
-  }
+
+
+#screenshotsContainer img:hover{
+transform: scale(3);
+
+}
 
 
 /* =============== */
