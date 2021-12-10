@@ -868,150 +868,166 @@ select + select {
     text-decoration: none;   
 }
 
-/* Report posm */
+/* Report case head */
 
-.homeoutlet .main .boxvideo {
-    position: relative;
+.container-camera {
+    padding: 16px 16px 14px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    max-width: 480px;
+    /* border-bottom: 1px solid #ebebeb; */
+    background-image: var(--color-bg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: auto;
 }
 
-#video {
+.container-camera #video {
     width: 100%;
     height: 100%;
 }
 
-.is-hidden {
+.container-camera .is-hidden {
     display: none;
 }
 
-.btns {
-    margin-bottom: 10px;
-    text-align: center;
-    
+.container-camera .boximg {
+    position: relative;
 }
 
-.btns #btnScreenshot {
+.container-camera .boximg .btns #btnScreenshot {
     position: absolute;
-    bottom: 5%;
-    left: 45%;
+    bottom: 0;
+    left: 44%;
+    margin-top: 5px !important;
 }
 
-.btn-change {
+.container-camera .btn-change {
     position: absolute;
-    top: 0;
-    left: 45%;
+    top: 0%;
+    right: 0%;
 }
 
-.btn-submit .send-img{
-    position: absolute;
-    bottom: 5%;
-    right: 0;
-}
-
-.main .title {
+.container-camera .main .title {
     color: #111;
     text-transform: capitalize;
 }
 
-.video-screenshot {
+.container-camera .video-screenshot {
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 2fr 1fr;
     grid-column-gap: 10px; 
 }
 
 /* =====Zoom IMG===== */
 
-input[type=checkbox] {
+.container-camera input[type=checkbox] {
     display: none;
 }
 
-.container-img {
+.container-camera .container-img {
     position:absolute;
-    bottom: 10%;
-    left: 5%;
-    width: 30%;
+    top: 0;
+    left: 0%;
+    width: 100%;
+    text-align: center;
+    /* margin-top: 20%; */
+
 }
 
-.container-img img {
+.container-camera .container-img img {
     transition: transform 0.25s ease;
     cursor: pointer;
-    width: 80px;
+    width: 100px;
+    object-fit: cover;
     margin-left: 5px;
 }
 
-/* input[type=checkbox]:checked ~ label > img {
-    transform: scale(2);
-    cursor: zoom-out;
-  } */
+.container-camera .btn-submit .send-img{
+    position: absolute;
+    top: 0%;
+    left: 5%;
+    
+}
 
 
-input[type=checkbox]:checked ~ label #screenshotsContainer img:hover{
-    transform: scale(2);
+.container-camera input[type=checkbox]:checked ~ label #screenshotsContainer img:hover{
+    transform: scale(3.5);
     border: 1px solid #1F6C2F;
     box-shadow: -0px -0px 10px rgba(0, 0, 0, 0.5);
 }
 
+
 /* =============== */
 
-.button {
-    width: 50px;
-    height: 50px;
-    font-size: 22px;
+.container-camera .button {
+    font-size: 18px;
     outline: none;
     margin: 15px;
     box-shadow: -0px -0px 10px rgba(255, 253, 253, 0.5);
 }
 
-.button:hover {
+.container-camera .button:hover {
     opacity: 0.8;
 }
 
-.is-light {
+.container-camera .is-light {
     background: #eee;
     color: #111;
     padding: 10px;
     border-radius: 50px;
     border: 1px solid #eee;
     outline: none;
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    padding: 10px;
 }
 
-.is-success {
+.container-camera .is-success {
     background: #3ec487;
     color: #fff;
-    padding: 10px;
     border-radius: 50px;
     border: 1px solid #3ec487;
     outline: none;
+    width: 35px;
+    height: 35px;
+    font-size: 16px;
+    padding: 10px;
 }
-.is-dark {
+.container-camera .is-dark {
     background: #2f2f2f;
     color: #fff;
     padding: 10px;
     border-radius: 50px;
     border: 1px solid #2f2f2f;
     outline: none;
+    width: 40px;
+    height: 40px;
 }
-.is-warning {
+.container-camera .is-warning {
     background: #ffdc7d;
     color: #111;
-    padding: 10px;
     border-radius: 50px;
     border: 1px solid #ffdc7d;
     outline: none;
+    width: 40px;
+    height: 40px;
 }
-.is-danger {
+.container-camera .is-danger {
     background: #f03a5f;
     color: #fff;
     padding: 10px;
     border-radius: 50px;
     border: 1px solid #f03a5f;
     outline: none;
+    width: 40px;
+    height: 40px;
 }
 
-
-
-/* .homeoutlet .main #canvas {
-    width: 100%;
-} */
 
 /* List Gift Page */
 
