@@ -875,7 +875,7 @@ select + select {
     position: fixed;
     top: 0;
     width: 100%;
-    height: 100vh;
+    height: 110vh;
     max-width: 480px;
     /* border-bottom: 1px solid #ebebeb; */
     background-image: var(--color-bg);
