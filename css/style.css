@@ -870,8 +870,7 @@ select + select {
 
 /* Report posm */
 
-
-.homeoutlet .video-main .boxvideo {
+.homeoutlet .main .boxvideo {
     position: relative;
 }
 
@@ -887,9 +886,25 @@ select + select {
 .btns {
     margin-bottom: 10px;
     text-align: center;
-    position:absolute;
-    bottom: 0;
-    left: 25%;
+    
+}
+
+.btns #btnScreenshot {
+    position: absolute;
+    bottom: 5%;
+    left: 45%;
+}
+
+.btn-change {
+    position: absolute;
+    top: 0;
+    left: 45%;
+}
+
+.btn-submit .send-img{
+    position: absolute;
+    bottom: 5%;
+    right: 0;
 }
 
 .main .title {
@@ -901,13 +916,19 @@ select + select {
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-column-gap: 10px; 
-    text-align: center;
 }
 
 /* =====Zoom IMG===== */
 
 input[type=checkbox] {
     display: none;
+}
+
+.container-img {
+    position:absolute;
+    bottom: 10%;
+    left: 0;
+    width: 30%;
 }
 
 .container-img img {
@@ -924,16 +945,20 @@ input[type=checkbox] {
 
 
 input[type=checkbox]:checked ~ label #screenshotsContainer img:hover{
-transform: scale(3);
+    transform: scale(3);
+    border: 1px solid #1F6C2F;
 }
 
 
 /* =============== */
 
 .button {
+    width: 50px;
+    height: 50px;
     font-size: 22px;
     outline: none;
     margin: 15px;
+    box-shadow: -0px -0px 10px rgba(255, 253, 253, 0.5);
 }
 
 .button:hover {
@@ -944,7 +969,7 @@ transform: scale(3);
     background: #eee;
     color: #111;
     padding: 10px;
-    border-radius: 5px;
+    border-radius: 50px;
     border: 1px solid #eee;
     outline: none;
 }
@@ -953,7 +978,7 @@ transform: scale(3);
     background: #3ec487;
     color: #fff;
     padding: 10px;
-    border-radius: 5px;
+    border-radius: 50px;
     border: 1px solid #3ec487;
     outline: none;
 }
@@ -961,7 +986,7 @@ transform: scale(3);
     background: #2f2f2f;
     color: #fff;
     padding: 10px;
-    border-radius: 5px;
+    border-radius: 50px;
     border: 1px solid #2f2f2f;
     outline: none;
 }
@@ -969,7 +994,7 @@ transform: scale(3);
     background: #ffdc7d;
     color: #111;
     padding: 10px;
-    border-radius: 5px;
+    border-radius: 50px;
     border: 1px solid #ffdc7d;
     outline: none;
 }
@@ -977,7 +1002,7 @@ transform: scale(3);
     background: #f03a5f;
     color: #fff;
     padding: 10px;
-    border-radius: 5px;
+    border-radius: 50px;
     border: 1px solid #f03a5f;
     outline: none;
 }
