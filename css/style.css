@@ -870,8 +870,13 @@ select + select {
 
 /* Report posm */
 
+.homeoutlet .main .boxvideo {
+    position: relative;
+}
+
 #video {
     width: 100%;
+    height: 100%;
 }
 
 .is-hidden {
@@ -881,6 +886,9 @@ select + select {
 .btns {
     margin-bottom: 10px;
     text-align: center;
+    position:absolute;
+    bottom: 0;
+    left: 25%;
 }
 
 .main .title {
@@ -892,11 +900,40 @@ select + select {
     text-align: center;
 }
 
-/* .video-screenshot {
+.video-screenshot {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     grid-column-gap: 10px;
-} */
+}
+
+/* =====Zoom IMG===== */
+
+input[type=checkbox] {
+    display: none;
+  }
+
+  /* .container-img {
+    text-align: center;
+  } */
+  
+  .container-img img {
+    transition: transform 0.25s ease;
+    cursor: pointer;
+    width: 80px;
+    margin-left: 5px;
+  }
+  
+  /* input[type=checkbox]:checked ~ label > img {
+    transform: scale(2);
+    cursor: zoom-out;
+  } */
+  #screenshotsContainer img:hover {
+    transform: scale(5);
+    text-align: center;
+  }
+
+
+/* =============== */
 
 .button {
     font-size: 22px;
