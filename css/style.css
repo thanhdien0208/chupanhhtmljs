@@ -896,6 +896,7 @@ select + select {
 
 .container-camera .boximg {
     position: relative;
+	margin-bottom: 20px;
 }
 
 .container-camera .boximg .btns #btnScreenshot {
