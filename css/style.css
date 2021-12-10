@@ -922,9 +922,8 @@ input[type=checkbox] {
   } */
 
 
-#screenshotsContainer img:hover{
+input[type=checkbox]:checked ~ label #screenshotsContainer img:hover{
 transform: scale(3);
-
 }
 
 
