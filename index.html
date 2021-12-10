@@ -45,9 +45,14 @@
                     
                     <form action="" method="post">
                         <div>
-                            <div id="screenshotsContainer">
-                            <canvas id="canvas" class="is-hidden"></canvas>
-                            </div>
+                            <div class="container-img">
+                                <input type="checkbox" id="zoomCheck">
+                                <label for="zoomCheck">
+                                <div id="screenshotsContainer">
+                                    <canvas id="canvas" class="is-hidden"></canvas>
+                                </div>
+                                </label>
+                                </div>
                         </div>
                         <button type="submit" class="button is-success" ><i class='bx bxs-send'></i></button>
                         <a id="download" download="report_img.png"><button class="downloadBtn button is-danger" type="button" onClick="download()"><i class="ti-download"></i></button></a>
