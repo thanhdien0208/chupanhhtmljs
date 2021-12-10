@@ -870,7 +870,8 @@ select + select {
 
 /* Report posm */
 
-.homeoutlet .main .boxvideo {
+
+.homeoutlet .video-main .boxvideo {
     position: relative;
 }
 
