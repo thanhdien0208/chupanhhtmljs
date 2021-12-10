@@ -58,17 +58,12 @@
   }
 
   btnScreenshot.addEventListener("click", function () {
-  let img = document.getElementById('screenshot');
-  if (!img) {
-      img = document.createElement("img");
-      img.id = 'screenshot';
-      img.style.width = '100%';
-  }
-  canvas.width = video.videoWidth;
-  canvas.height = video.videoHeight;
-  canvas.getContext("2d").drawImage(video, 0, 0);
-  img.src = canvas.toDataURL("image/png");
-  screenshotsContainer.prepend(img);
+    const img = document.createElement("img");
+    canvas.width = video.videoWidth;
+    canvas.height = video.videoHeight;
+    canvas.getContext("2d").drawImage(video, 0, 0);
+    img.src = canvas.toDataURL("image/png");
+    screenshotsContainer.prepend(img);
   });
 
   async function init() {
