@@ -29,24 +29,26 @@
             <!-- Main -->
             <div class="row main">
                 <p class="title">Hình ảnh nhãn hàng</p>
-                <div class=btns>
-                    <button class="button is-success is-hidden" id="btnPlay"><i class="ti-control-play"></i></button> 
-                    <button class="button is-dark" id="btnPause"><i class="ti-control-pause"></i></button> 
-                    <button class="button is-light" id="btnScreenshot"><i class="ti-camera"></i></button> 
-                    <button class="button is-warning" id="btnChangeCamera"><i class="ti-reload"></i></button>
-                    <a id="download" download="report_img.png"><button class="downloadBtn button is-danger" type="button" onClick="download()"><i class="ti-download"></i></button></a>
+                <div class="boxvideo">
+                    <video controls autoplay id="video"></video>
+                    <div class=btns>
+                        <button class="button is-success is-hidden" id="btnPlay"><i class="ti-control-play"></i></button> 
+                        <button class="button is-dark" id="btnPause"><i class="ti-control-pause"></i></button> 
+                        <button class="button is-light" id="btnScreenshot"><i class="ti-camera"></i></button> 
+                        <button class="button is-warning" id="btnChangeCamera"><i class="ti-reload"></i></button>
+                    </div>
                 </div>
                 
                 <div class="video-screenshot">
                     
                     <form action="" method="post">
-                        <video autoplay id="video"></video>
                         <div>
                             <div id="screenshotsContainer">
                             <canvas id="canvas" class="is-hidden"></canvas>
                             </div>
                         </div>
-                        <input type="submit" class="button is-success" value="Gửi">
+                        <button type="submit" class="button is-success" ><i class='bx bxs-send'></i></button>
+                        <a id="download" download="report_img.png"><button class="downloadBtn button is-danger" type="button" onClick="download()"><i class="ti-download"></i></button></a>
                     </form>
                 </div>
                 
