@@ -900,7 +900,7 @@ select + select {
 
 .container-camera .boximg .btns #btnScreenshot {
     position: absolute;
-    bottom: 0;
+    top: 0;
     left: 43%;
     margin-top: 5px !important;
 }
@@ -909,6 +909,7 @@ select + select {
     position: absolute;
     top: 0%;
     right: 0%;
+    margin-top: -5px;
 }
 
 .container-camera .main .title {
@@ -931,10 +932,11 @@ select + select {
 
 .container-camera .container-img {
     position:absolute;
-    top: 0;
+    bottom: 0%;
     left: 0%;
     width: 100%;
     text-align: center;
+    margin-bottom: 10px;
 }
 
 .container-camera .container-img img {
@@ -949,12 +951,12 @@ select + select {
     position: absolute;
     top: 0%;
     left: 5%;
-    
+    margin-top: 10px !important;
 }
 
 
 .container-camera input[type=checkbox]:checked ~ label #screenshotsContainer img:hover{
-    transform: scale(3.5);
+    transform: scale(3);
     border: 1px solid #1F6C2F;
     box-shadow: -0px -0px 10px rgba(0, 0, 0, 0.5);
 }
