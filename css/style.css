@@ -885,6 +885,12 @@ select + select {
     overflow: auto;
 }
 
+.container-camera .boxvideo {
+	width: 100%;
+	overflow: auto;
+	height: 100vh;
+}
+
 .container-camera #video {
     width: 100%;
     height: 600px;
@@ -922,7 +928,6 @@ select + select {
     display: grid;
     grid-template-rows: 2fr 1fr;
     grid-column-gap: 10px; 
-    overflow: auto;
 }
 
 /* =====Zoom IMG===== */
