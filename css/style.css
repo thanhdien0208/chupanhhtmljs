@@ -885,6 +885,10 @@ select + select {
     overflow: auto;
 }
 
+.container-camera .main {
+    margin-bottom: 20px;
+}
+
 .container-camera .boxvideo {
     position: relative;
 }
