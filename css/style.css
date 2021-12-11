@@ -875,7 +875,7 @@ select + select {
     position: fixed;
     top: 0;
     width: 100%;
-    height: 110vh;
+    height: 80vh;
     max-width: 480px;
     /* border-bottom: 1px solid #ebebeb; */
     background-image: var(--color-bg);
@@ -887,7 +887,7 @@ select + select {
 
 .container-camera #video {
     width: 100%;
-    height: 90%;
+    height: 80%;
 }
 
 .container-camera .is-hidden {

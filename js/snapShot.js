@@ -12,7 +12,7 @@ const video = document.querySelector("#video");
 const canvas = document.querySelector("#canvas");
 const screenshotsContainer = document.querySelector("#screenshotsContainer");
 let videoStream = null
-let useFrontCamera = true; //camera trước
+let useFrontCamera = false; //camera trước
 const constraints = {
 video: {
     width: {
