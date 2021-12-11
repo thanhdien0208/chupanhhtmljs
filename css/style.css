@@ -1166,11 +1166,14 @@ select + select {
     .homeoutlet .main .main-top .filter-box {
         width: 100%;
     }
-	
-	.container-camera #video {
-    width: 100%;
-    height: 70%;
-}
+
+    .container-camera #video {
+        width: 100%;
+        height: 70%;
+    }
     
+    .container-camera .video-screenshot {
+        margin-top: 20px;
+    }
 }
 
