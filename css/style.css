@@ -1172,8 +1172,8 @@ select + select {
         height: 70%;
     }
     
-    .container-camera .video-screenshot {
-        margin-top: 20px;
+    .container-camera .main {
+        margin-bottom: 20px;
     }
 }
 
