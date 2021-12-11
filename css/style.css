@@ -885,12 +885,6 @@ select + select {
     overflow: auto;
 }
 
-.container-camera .boxvideo {
-	width: 100%;
-	overflow: auto;
-	height: 100vh;
-}
-
 .container-camera #video {
     width: 100%;
     height: 540px;
@@ -909,7 +903,7 @@ select + select {
     position: absolute;
     top: 0;
     left: 43%;
-    margin-top: 15px !important;
+    margin-top: -15px !important;
 }
 
 .container-camera .btn-change {
@@ -957,7 +951,7 @@ select + select {
     position: absolute;
     top: 0%;
     left: 0%;
-    margin-top: 20px !important;
+    margin-top: -20px !important;
 }
 
 
